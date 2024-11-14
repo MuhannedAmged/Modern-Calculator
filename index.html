@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Calculator</title>
+    <link rel="icon" href="./icons/calculator-technology-svgrepo-com.svg">
+    <meta name="theme-color"content="#f4f4f4">
+    <link rel="stylesheet" href="icons/style.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="calc-parent">
+        <div class="light-dark">
+            <button class="light-dark-btn"><span class="icon-brightness-up"></span></button>
+            <div class="sahp">light mode</div>
+        </div>
+        <div class="values">
+            <div class="operator"></div>
+            <div class="input-value">0</div>
+        </div>
+        <div class="buttons">
+            <button id="clear" class="btn color">C</button>
+            <button class="btn x color">%</button>
+            <button class="btn x color">/</button>
+            <button class="btn x color">x</button>
+            <button class="btn btn-txt">7</button>
+            <button class="btn btn-txt">8</button>
+            <button class="btn btn-txt">9</button>
+            <button class="btn x color">-</button>
+            <button class="btn btn-txt">4</button>
+            <button class="btn btn-txt">5</button>
+            <button class="btn btn-txt">6</button>
+            <button class="btn x color">+</button>
+            <button class="btn btn-txt">1</button>
+            <button class="btn btn-txt">2</button>
+            <button class="btn btn-txt">3</button>
+            <button id="backspace" class="btn color"><i class="icon-backspace-outline"></i></button>
+            <button class="btn btn-txt">0</button>
+            <button class="btn x color">.</button>
+            <button onclick="equal()" class="btn color">=</button>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.10.0/math.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

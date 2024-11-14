@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::selection {
+    background-color: transparent;
+}
+
+button {
+    cursor: pointer;
+}
+
+:root {
+    --light-bg: #fafbff;
+    --light-color-one: #0087f2;
+    --light-color-two: #000;
+    --dark-bg: #374353;
+    --dark-color-one: #ffffff;
+    --dark-color-two: #8d9796;
+    --body-bg: #fff;
+    --shadow-color: #dbecfc;
+    --bg-btns: #fff;
+    --hover-btns: #f7f7f7;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: var(--body-bg);
+    font-family: "Roboto", serif;
+}
+
+.dark-mode {
+    --light-bg: #374353;
+    --light-color-one: #8d8d8d;
+    --light-color-two: #ffffff;
+    --body-bg: #282e37;
+    --bg-btns: #374353;
+    --shadow-color: #414d5b;
+    --hover-btns: #313131;
+}
+.calc-parent {
+    width: 370px;
+    max-width: 370px;
+    height: 570px;
+    background-color: var(--light-bg);
+    padding: 15px;
+    border-radius: 7px;
+    box-shadow: 1px 3px 18px var(--shadow-color);
+}
+
+.light-dark {
+    width: fit-content;
+    margin-left: auto;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    position: relative;
+    text-align: end;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 2px 28px;
+    border-radius: 50px;
+    color: var(--light-color-one);
+    box-shadow: 0 0 5px var(--shadow-color);
+}
+
+.sahp {
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.light-dark-btn {
+    position: absolute;
+    left: 0%;
+    font-size: 17px;
+    font-weight: 500;
+    border: none;
+    color: inherit;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 22px;
+    height: 22px;
+    box-shadow: 0 0 2px var(--shadow-color);
+    transition: .3s;
+}
+
+.values {
+    max-width: 100%;
+    margin: 3px 0 5px 0;
+    padding: 10px 15px 10px 0;
+    height: 100px;
+    overflow: auto;
+    text-align: right;
+    text-transform: uppercase;
+}
+.operator {
+    font-size: 20px;
+    color: var(--light-color-two);
+    height: 27px;
+    transition: .3s;
+}
+
+.input-value {
+    font-size: 35px;
+    color: var(--light-color-one);
+    transition: .3s;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-bottom: 10px;
+    height: 71%;
+}
+
+.buttons button {
+    background-color: var(--bg-btns);
+    padding: 10px 10px;
+    border: none;
+    border-radius: 6px;
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--light-color-two);
+    text-transform: uppercase;
+    box-shadow: 4px 3px 7px var(--shadow-color), 0 0px 5px var(--shadow-color);
+    transition: .3s;
+}
+
+.buttons button:hover {
+    background-color: var(--hover-btns);
+}
+
+.buttons button:active {
+    box-shadow: 2px 2px 10px var(--shadow-color) inset;
+    transition: .3s;
+}
+
+.buttons button.color {
+    color: var(--light-color-one);
+}
+
+.buttons button.color:last-child {
+    grid-column: span 2;
+}
